@@ -1,5 +1,9 @@
 <?php
 session_start();
+echo $_SESSION['islogin'];
+if(!isset($_SESSION['islogin'])){
+    header("location: ../auth/index.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

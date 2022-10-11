@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if($_SESSION['islogin'] == false){
+    if(!isset($_SESSION['islogin'])){
         header ("Location: ./auth/index.php");
     }else{
         header ("Location: ./dashboard/index.php");
