@@ -16,8 +16,8 @@ $(document).ready(() =>{
                     )
                     setTimeout(() => {
                         // window.location.href = "../"
-                        alert('rawr');
-                    },2000)
+                        window.location.href = "../dashboard/"
+                    },1200)
                 }else{
                     Swal.fire(
                         'Failed',
